@@ -1,0 +1,870 @@
+Sections:
+	.init       type:code align:32
+	extab       type:rodata align:32
+	extabindex  type:rodata align:32
+	.text       type:code align:32
+	.kpadtext   type:code align:32
+	.ctors      type:rodata align:32
+	.dtors      type:rodata align:32
+	.rodata     type:rodata align:64
+	.data       type:data align:32
+	.bss        type:bss align:64
+	.sdata      type:data align:32
+	.sbss       type:bss align:32
+	.sdata2     type:rodata align:32
+	.sbss2      type:bss align:32
+
+Indep/zMiscSmall.cpp:
+	.text       start:0x80006A60 end:0x80008040
+	.ctors      start:0x805941C4 end:0x805941C8
+	.data       start:0x805A7FE0 end:0x805A8988
+	.bss        start:0x80660940 end:0x80660950
+	.sdata      start:0x80752300 end:0x807523F0
+	.sbss       start:0x80756460 end:0x80756530
+	.sdata2     start:0x80759920 end:0x80759928
+
+Indep/zAI.cpp:
+	.text       start:0x80008040 end:0x8003BE64
+	.ctors      start:0x805941C8 end:0x805941CC
+	.rodata     start:0x80594340 end:0x80594D08
+	.data       start:0x805A8988 end:0x805AD5A0
+	.bss        start:0x80660950 end:0x80660DB0
+	.sdata      start:0x807523F0 end:0x807524E0
+	.sbss       start:0x80756530 end:0x807565E8
+	.sdata2     start:0x80759928 end:0x80759C10
+	.sbss2      start:0x8075DE00 end:0x8075DE08
+
+Indep/zAI2.cpp:
+	.text       start:0x8003BE64 end:0x800464B4
+	.ctors      start:0x805941CC end:0x805941D0
+	.data       start:0x805AD5A0 end:0x805ADA68
+	.bss        start:0x80660DB0 end:0x80660E70
+	.sdata      start:0x807524E0 end:0x807524F0
+	.sbss       start:0x807565E8 end:0x80756620
+	.sdata2     start:0x80759C10 end:0x80759D40
+
+Indep/zBWare.cpp:
+	.text       start:0x800464B4 end:0x8004F060
+	.ctors      start:0x805941D0 end:0x805941D4
+	.rodata     start:0x80594D08 end:0x80595168
+	.data       start:0x805ADA68 end:0x805AEEE8
+	.bss        start:0x80660E70 end:0x80664B08
+	.sdata      start:0x807524F0 end:0x80752598
+	.sbss       start:0x80756620 end:0x807566B8
+	.sdata2     start:0x80759D40 end:0x80759DF8
+
+Indep/zDamage.cpp:
+	.text       start:0x8004F060 end:0x80050454
+	.ctors      start:0x805941D4 end:0x805941D8
+	.data       start:0x805AEEE8 end:0x805AF170
+	.bss        start:0x80664B08 end:0x80664B40
+	.sdata      start:0x80752598 end:0x807525A8
+	.sbss       start:0x807566B8 end:0x807566C8
+	.sdata2     start:0x80759DF8 end:0x80759E18
+
+Indep/zDynamics.cpp:
+	.text       start:0x80050454 end:0x80058824
+	.ctors      start:0x805941D8 end:0x805941DC
+	.rodata     start:0x80595168 end:0x805951B8
+	.data       start:0x805AF170 end:0x805AF1A8
+	.bss        start:0x80664B40 end:0x80664B60
+	.sdata      start:0x807525A8 end:0x807525B0
+	.sbss       start:0x807566C8 end:0x807566E8
+	.sdata2     start:0x80759E18 end:0x80759E60
+
+Indep/zEcstasy.cpp:
+	.text       start:0x80058824 end:0x800776BC
+	.ctors      start:0x805941DC end:0x805941E0
+	.rodata     start:0x805951B8 end:0x805952C0
+	.data       start:0x805AF1A8 end:0x805B0BA0
+	.bss        start:0x80664B60 end:0x8066CAC0
+	.sdata      start:0x807525B0 end:0x807527A0
+	.sbss       start:0x807566E8 end:0x80756A98
+	.sdata2     start:0x80759E60 end:0x8075A060
+	.sbss2      start:0x8075DE08 end:0x8075DE10
+
+Indep/zEventSys.cpp:
+	.text       start:0x800776BC end:0x80083CB8
+	.ctors      start:0x805941E0 end:0x805941E4
+	.data       start:0x805B0BA0 end:0x805B0ED0
+	.bss        start:0x8066CAC0 end:0x8066DBD0
+	.sdata      start:0x807527A0 end:0x80752890
+	.sbss       start:0x80756A98 end:0x80756B10
+	.sdata2     start:0x8075A060 end:0x8075A098
+
+Indep/zFoundation.cpp:
+	.text       start:0x80083CB8 end:0x8008A0E8
+	.ctors      start:0x805941E4 end:0x805941E8
+	.rodata     start:0x805952C0 end:0x805952C0
+	.data       start:0x805B0ED0 end:0x805B11C8
+	.bss        start:0x8066DBD0 end:0x8066DC50
+	.sdata      start:0x80752890 end:0x807528B0
+	.sbss       start:0x80756B10 end:0x80756B40
+	.sdata2     start:0x8075A098 end:0x8075A0D0
+	.sbss2      start:0x8075DE10 end:0x8075DE10
+
+Indep/zPhysicsBehaviors.cpp:
+	.text       start:0x8008A0E8 end:0x800D8848
+	.ctors      start:0x805941E8 end:0x805941EC
+	.rodata     start:0x80595518 end:0x80595DC8
+	.data       start:0x805B11C8 end:0x805B6928
+	.bss        start:0x8066DC50 end:0x80674BA8
+	.sdata      start:0x807528B0 end:0x80752AF0
+	.sbss       start:0x80756B40 end:0x80756CB8
+	.sdata2     start:0x8075A0D0 end:0x8075A254
+	.sbss2      start:0x8075DE18 end:0x8075DE28
+
+Indep/zRender.cpp:
+	.text       start:0x800D8848 end:0x800EC328
+	.ctors      start:0x805941EC end:0x805941F0
+	.rodata     start:0x80595DC8 end:0x80595E48
+	.data       start:0x805B6928 end:0x805B76E0
+	.bss        start:0x80674BA8 end:0x80677E70
+	.sdata      start:0x80752AF0 end:0x80752BC8
+	.sbss       start:0x80756CB8 end:0x80756D68
+	.sdata2     start:0x8075A420 end:0x8075A618
+
+Indep/zSim.cpp:
+	.text       start:0x800EC328 end:0x8010806C
+	.ctors      start:0x805941F0 end:0x805941F4
+	.rodata     start:0x80595E48 end:0x80595EC0
+	.data       start:0x805B76E0 end:0x805B8EE0
+	.bss        start:0x80677E70 end:0x8067A688
+	.sdata      start:0x80752BC8 end:0x80752CB0
+	.sbss       start:0x80756D68 end:0x80756DF8
+	.sdata2     start:0x8075A618 end:0x8075A6A0
+
+Indep/zAnim.cpp:
+	.text       start:0x8010806C end:0x8011A554
+	.ctors      start:0x805941F4 end:0x805941F8
+	.rodata     start:0x80595EC0 end:0x80595EE8
+	.data       start:0x805B8EE0 end:0x805BA0D8
+	.bss        start:0x8067A688 end:0x8067C7E0
+	.sdata      start:0x80752CB0 end:0x80752D68
+	.sbss       start:0x80756DF8 end:0x80756F48
+	.sdata2     start:0x8075A6A0 end:0x8075A748
+
+Indep/zAttribSys.cpp:
+	.text       start:0x8011A554 end:0x80123CAC
+	.ctors      start:0x805941F8 end:0x805941FC
+	.data       start:0x805BA0D8 end:0x805BA468
+	.bss        start:0x8067C7E0 end:0x8067C7F0
+	.sdata      start:0x80752D68 end:0x80752D78
+	.sbss       start:0x80756F48 end:0x80756F98
+	.sdata2     start:0x8075A748 end:0x8075A750
+
+Indep/zDatabase.cpp:
+	.text       start:0x80123CAC end:0x801691B0
+	.ctors      start:0x805941FC end:0x80594200
+	.rodata     start:0x80595EE8 end:0x80595F68
+	.data       start:0x805BA468 end:0x805BEC90
+	.bss        start:0x8067C7F0 end:0x8067C918
+	.sdata      start:0x80752D78 end:0x80752F60
+	.sbss       start:0x80756F98 end:0x80756FE8
+	.sdata2     start:0x8075A750 end:0x8075A870
+	.sbss2      start:0x8075DE28 end:0x8075DE30
+
+Indep/zDebug.cpp:
+	.text       start:0x801691B0 end:0x80188594
+	.ctors      start:0x80594200 end:0x80594204
+	.rodata     start:0x80595F68 end:0x805960B0
+	.data       start:0x805BEC90 end:0x805C5C38
+	.bss        start:0x8067C918 end:0x80681160
+	.sdata      start:0x80752F60 end:0x807536E0
+	.sbss       start:0x80756FE8 end:0x80757130
+	.sdata2     start:0x8075A870 end:0x8075ADF8
+
+Indep/zEAGL4Anim.cpp:
+	.text       start:0x80188594 end:0x8019D474
+	.ctors      start:0x80594204 end:0x80594208
+	.rodata     start:0x805960B0 end:0x80596108
+	.data       start:0x805C5C38 end:0x805C6A28
+	.bss        start:0x80681160 end:0x80681CD0
+	.sdata      start:0x807536E0 end:0x80753710
+	.sbss       start:0x80757130 end:0x80757170
+	.sdata2     start:0x8075ADF8 end:0x8075AE60
+
+Indep/zEAXSound.cpp:
+	.text       start:0x8019D474 end:0x801BA850
+	.ctors      start:0x80594208 end:0x8059420C
+	.rodata     start:0x80596108 end:0x80596A18
+	.data       start:0x805C6A28 end:0x805C97D8
+	.bss        start:0x80681CD0 end:0x80684358
+	.sdata      start:0x80753710 end:0x80753790
+	.sbss       start:0x80757170 end:0x807572F8
+	.sdata2     start:0x8075AE60 end:0x8075B0B8
+
+Indep/zEAXSound2.cpp:
+	.text       start:0x801BA850 end:0x801E15F8
+	.ctors      start:0x8059420C end:0x80594210
+	.rodata     start:0x80596A18 end:0x80599ED8
+	.data       start:0x805C97D8 end:0x805CDEE8
+	.bss        start:0x80684358 end:0x806853A8
+	.sdata      start:0x80753790 end:0x80753968
+	.sbss       start:0x807572F8 end:0x80757538
+	.sdata2     start:0x8075B0B8 end:0x8075B5D0
+
+Indep/zFe.cpp:
+	.text       start:0x801E15F8 end:0x80244D1C
+	.ctors      start:0x80594210 end:0x80594214
+	.rodata     start:0x80599ED8 end:0x8059A738
+	.data       start:0x805CDEE8 end:0x805DAE28
+	.bss        start:0x806853A8 end:0x80686D70
+	.sdata      start:0x80753968 end:0x80753E60
+	.sbss       start:0x80757538 end:0x807576B8
+	.sdata2     start:0x8075B5D0 end:0x8075B740
+	.sbss2      start:0x8075DE30 end:0x8075DE38
+
+Indep/zFe2.cpp:
+	.text       start:0x80244D1C end:0x8025CED4
+	.ctors      start:0x80594214 end:0x80594218
+	.data       start:0x805DAE28 end:0x805DD7A8
+	.bss        start:0x80686D70 end:0x80686DB8
+	.sdata      start:0x80753E60 end:0x80754008
+	.sbss       start:0x807576B8 end:0x80757788
+	.sdata2     start:0x8075B740 end:0x8075B838
+
+Indep/zFEng.cpp:
+	.text       start:0x8025CED4 end:0x8026F624
+	.ctors      start:0x80594218 end:0x8059421C
+	.rodata     start:0x8059A738 end:0x8059A780
+	.data       start:0x805DD7A8 end:0x805DE0E0
+	.bss        start:0x80686DB8 end:0x80686F30
+	.sdata      start:0x80754008 end:0x807540C0
+	.sbss       start:0x80757788 end:0x807577B0
+	.sdata2     start:0x8075B838 end:0x8075B8A0
+
+Indep/zICE.cpp:
+	.text       start:0x8026F624 end:0x8027B7B8
+	.ctors      start:0x8059421C end:0x80594220
+	.rodata     start:0x8059A780 end:0x8059A818
+	.data       start:0x805DE0E0 end:0x805DF578
+	.bss        start:0x80686F30 end:0x80688C20
+	.sdata      start:0x807540C0 end:0x80754220
+	.sbss       start:0x807577B0 end:0x807577D8
+	.sdata2     start:0x8075B8A0 end:0x8075B9E8
+
+Indep/zCamera.cpp:
+	.text       start:0x8027B7B8 end:0x80293888
+	.ctors      start:0x80594220 end:0x80594224
+	.rodata     start:0x8059A818 end:0x8059B118
+	.data       start:0x805DF578 end:0x805E1EE0
+	.bss        start:0x80688C20 end:0x806890B8
+	.sdata      start:0x80754220 end:0x807542C8
+	.sbss       start:0x807577D8 end:0x807578B0
+	.sdata2     start:0x8075B9E8 end:0x8075BC00
+
+Indep/zGameplay.cpp:
+	.text       start:0x80293888 end:0x802DB888
+	.ctors      start:0x80594224 end:0x80594228
+	.rodata     start:0x8059B118 end:0x8059B390
+	.data       start:0x805E1EE0 end:0x805E4938
+	.bss        start:0x806890B8 end:0x806895C8
+	.sdata      start:0x807542C8 end:0x80754410
+	.sbss       start:0x807578B0 end:0x80757998
+	.sdata2     start:0x8075BC00 end:0x8075BD60
+	.sbss2      start:0x8075DE38 end:0x8075DE40
+
+Indep/zMain.cpp:
+	.text       start:0x802DB888 end:0x8030AD5C
+	.ctors      start:0x80594228 end:0x8059422C
+	.rodata     start:0x8059B390 end:0x8059FEA8
+	.data       start:0x805E4938 end:0x805E9810
+	.bss        start:0x806895C8 end:0x80689E58
+	.sdata      start:0x80754410 end:0x80754598
+	.sbss       start:0x80757998 end:0x80757A30
+	.sdata2     start:0x8075BD60 end:0x8075BE30
+
+Indep/zMisc.cpp:
+	.text       start:0x8030AD5C end:0x80324240
+	.ctors      start:0x8059422C end:0x80594230
+	.rodata     start:0x8059FEA8 end:0x805A0758
+	.data       start:0x805E9810 end:0x805EB110
+	.bss        start:0x80689E58 end:0x8068C718
+	.sdata      start:0x80754598 end:0x807547C0
+	.sbss       start:0x80757A30 end:0x80757DC8
+	.sdata2     start:0x8075BE30 end:0x8075BF98
+
+Indep/zLua.cpp:
+	.text       start:0x80324240 end:0x8034381C
+	.ctors      start:0x80594230 end:0x80594234
+	.rodata     start:0x805A0758 end:0x805A08E0
+	.data       start:0x805EB110 end:0x805EE080
+	.bss        start:0x8068C718 end:0x8068C8B0
+	.sdata      start:0x807547C0 end:0x80754AD0
+	.sbss       start:0x80757DC8 end:0x80757E00
+	.sdata2     start:0x8075BF98 end:0x8075BFF8
+	.sbss2      start:0x8075DE40 end:0x8075DE48
+
+Indep/zPlatform.cpp:
+	.text       start:0x8034381C end:0x8034A258
+	.ctors      start:0x80594234 end:0x80594238
+	.rodata     start:0x805A08E0 end:0x805A0918
+	.data       start:0x805EE080 end:0x80606020
+	.bss        start:0x8068C8B0 end:0x8068D530
+	.sdata      start:0x80754AD0 end:0x80754B38
+	.sbss       start:0x80757E00 end:0x80757EB0
+	.sdata2     start:0x8075BFF8 end:0x8075C0A0
+
+Indep/zPhysics.cpp:
+	.text       start:0x8034A258 end:0x80376DF8
+	.ctors      start:0x80594238 end:0x8059423C
+	.data       start:0x80606020 end:0x80609A70
+	.bss        start:0x8068D530 end:0x80691328
+	.sdata      start:0x80754B38 end:0x80754D38
+	.sbss       start:0x80757EB0 end:0x80758048
+	.sdata2     start:0x8075C0A0 end:0x8075C1F8
+
+Indep/zSpeech.cpp:
+	.text       start:0x80376DF8 end:0x80391F80
+	.ctors      start:0x8059423C end:0x80594240
+	.data       start:0x80609A70 end:0x8060ACE0
+	.bss        start:0x80691328 end:0x80694D10
+	.sdata      start:0x80754D38 end:0x80755230
+	.sbss       start:0x80758048 end:0x80758420
+	.sdata2     start:0x8075C1F8 end:0x8075C2F8
+
+Indep/zTrack.cpp:
+	.text       start:0x80391F80 end:0x803A0A84
+	.ctors      start:0x80594240 end:0x80594244
+	.data       start:0x8060ACE0 end:0x8060C768
+	.bss        start:0x80694D10 end:0x8069A7B0
+	.sdata      start:0x80755230 end:0x807552F8
+	.sbss       start:0x80758420 end:0x80758540
+	.sdata2     start:0x8075C2F8 end:0x8075C3F0
+
+Indep/zWorld.cpp:
+	.text       start:0x803A0A84 end:0x803E4590
+	.ctors      start:0x80594244 end:0x80594248
+	.rodata     start:0x805A0918 end:0x805A1688
+	.data       start:0x8060C768 end:0x806160A0
+	.bss        start:0x8069A7B0 end:0x8069F348
+	.sdata      start:0x807552F8 end:0x80755730
+	.sbss       start:0x80758540 end:0x80758770
+	.sdata2     start:0x8075C3F0 end:0x8075C728
+	.sbss2      start:0x8075DE48 end:0x8075DE50
+
+Indep/zWorld2.cpp:
+	.text       start:0x803E4590 end:0x804057AC
+	.ctors      start:0x80594248 end:0x8059424C
+	.rodata     start:0x805A1688 end:0x805A1758
+	.data       start:0x806160A0 end:0x80616F28
+	.bss        start:0x8069F348 end:0x806A1008
+	.sdata      start:0x80755730 end:0x80755760
+	.sbss       start:0x80758770 end:0x80758838
+	.sdata2     start:0x8075C728 end:0x8075C818
+
+Indep/zWorld3.cpp:
+	.text       start:0x804057AC end:0x80409F94
+	.ctors      start:0x8059424C end:0x80594250
+	.rodata     start:0x805A1758 end:0x805A1780
+	.data       start:0x80616F28 end:0x80617110
+	.bss        start:0x806A1008 end:0x806A19C0
+	.sdata      start:0x80755760 end:0x80755798
+	.sbss       start:0x80758838 end:0x80758898
+	.sdata2     start:0x8075C818 end:0x8075C860
+
+Indep/zOnline.cpp:
+	.text       start:0x80409F94 end:0x8040A09C
+	.ctors      start:0x80594250 end:0x80594254
+	.data       start:0x80617110 end:0x80617140
+	.bss        start:0x806A19C0 end:0x806A19D0
+	.sdata      start:0x80755798 end:0x807557A0
+	.sbss       start:0x80758898 end:0x807588B0
+	.sdata2     start:0x8075C860 end:0x8075C868
+
+Indep/zFEOverlay.cpp:
+	.text       start:0x8040A09C end:0x8044A2D8
+	.ctors      start:0x80594254 end:0x80594258
+	.rodata     start:0x805A1780 end:0x805A1B18
+	.data       start:0x80617140 end:0x8062EB88
+	.bss        start:0x806A19D0 end:0x806A1BA8
+	.sdata      start:0x807557A0 end:0x80755B18
+	.sbss       start:0x807588B0 end:0x80758BC0
+	.sdata2     start:0x8075C868 end:0x8075C9C0
+
+eathread.cpp:
+	.text       start:0x8044A2D8 end:0x8044A348
+	.data       start:0x8062EB88 end:0x8062EBB0
+	.sbss       start:0x80758BC0 end:0x80758BC8
+
+eathread_mutex.cpp:
+	.text       start:0x8044A348 end:0x8044A4AC
+	.text       start:0x8044A4AC end:0x8044A538
+	.data       start:0x8062EBB0 end:0x8062EC40
+
+eathread_thread.cpp:
+	.text       start:0x8044A538 end:0x8044A558
+	.text       start:0x8044A558 end:0x8044A55C
+	.ctors      start:0x80594258 end:0x8059425C
+	.bss        start:0x806A1BA8 end:0x806A1C28
+
+BB_runtime.cpp:
+	.text       start:0x8044A55C end:0x8044A568
+	.text       start:0x8044A568 end:0x8044A5D0
+	.text       start:0x8044A5D0 end:0x8044ACB8
+	.text       start:0x8044ACB8 end:0x8044ACBC
+	.ctors      start:0x8059425C end:0x80594260
+	.sbss       start:0x80758BC8 end:0x80758BD0
+
+s3dlow.c:
+	.text       start:0x8044ACBC end:0x8044AD9C
+
+saems.c:
+	.text       start:0x8044AD9C end:0x8044D3F4
+	.text       start:0x8044D3F4 end:0x8044D45C
+	.text       start:0x8044D45C end:0x8044D4C4
+	.data       start:0x8062EC40 end:0x8062ED90
+	.sbss       start:0x80758BD0 end:0x80758BD8
+	.sdata2     start:0x8075C9C0 end:0x8075CA00
+
+saemsamb.c:
+	.text       start:0x8044D4C4 end:0x8044D6B0
+	.ctors      start:0x80594260 end:0x80594264
+	.bss        start:0x806A1C28 end:0x806A1C58
+
+saemsmbf.c:
+	.text       start:0x8044D6B0 end:0x8044DBD8
+	.sdata      start:0x80755B18 end:0x80755B20
+	.sbss       start:0x80758BD8 end:0x80758C18
+
+saemsmbm.c:
+	.text       start:0x8044DBD8 end:0x8044DEAC
+	.sbss       start:0x80758C18 end:0x80758C38
+
+saemstimupdt.c:
+	.text       start:0x8044DEAC end:0x8044DF1C
+
+salloc.c:
+	.text       start:0x8044DF1C end:0x8044E4D8
+	.bss        start:0x806A1C58 end:0x806A1C68
+	.sbss       start:0x80758C38 end:0x80758C40
+
+satospkr.c:
+	.text       start:0x8044E4D8 end:0x8044EAA4
+	.text       start:0x8044EAA4 end:0x8044EAEC
+	.bss        start:0x806A1C68 end:0x806A1C80
+	.sbss       start:0x80758C40 end:0x80758C48
+	.sdata2     start:0x8075CA00 end:0x8075CA50
+
+sdata.c:
+	.bss        start:0x806A1C80 end:0x806A1ED8
+
+sattrdef.c:
+	.text       start:0x8044EAEC end:0x8044EB78
+
+sbadd.c:
+	.text       start:0x8044EB78 end:0x8044ED24
+
+sballoc.c:
+	.text       start:0x8044ED24 end:0x8044EDA0
+
+sbasync.c:
+	.text       start:0x8044EDA0 end:0x8044F6B0
+	.data       start:0x8062ED90 end:0x8062EDA0
+
+sbasyncm.c:
+	.text       start:0x8044F6B0 end:0x8044F6BC
+
+sbhdrcpy.c:
+	.text       start:0x8044F6BC end:0x8044F738
+
+sbhdrsze.c:
+	.text       start:0x8044F738 end:0x8044F75C
+
+sbpatinf.c:
+	.text       start:0x8044F75C end:0x8044F84C
+
+sbplay.c:
+	.text       start:0x8044F84C end:0x8044F8F8
+
+sbremove.c:
+	.text       start:0x8044F8F8 end:0x8044FA50
+
+sbvalid.c:
+	.text       start:0x8044FA50 end:0x8044FAB0
+
+scheckpo.c:
+	.text       start:0x8044FAB0 end:0x8044FADC
+
+sclcptch.c:
+	.text       start:0x8044FADC end:0x8044FC50
+	.data       start:0x8062EDA0 end:0x8062EEA0
+
+sclnt100.c:
+	.text       start:0x8044FC50 end:0x8044FD80
+
+sctlfilt.c:
+	.text       start:0x8044FD80 end:0x8044FDF0
+
+sctrldry.cpp:
+	.text       start:0x8044FDF0 end:0x8044FEA8
+
+sdownmix.cpp:
+	.text       start:0x8044FEA8 end:0x8044FF1C
+	.rodata     start:0x805A1B18 end:0x805A1BD0
+
+sexithndl.c:
+	.text       start:0x8044FF1C end:0x8044FF20
+
+sfxlevel.c:
+	.text       start:0x8044FF20 end:0x80450030
+	.sdata2     start:0x8075CA50 end:0x8075CA60
+
+sgetdata.c:
+	.text       start:0x80450030 end:0x804500A8
+
+sgetpvol.c:
+	.text       start:0x804500A8 end:0x80450134
+	.sdata2     start:0x8075CA60 end:0x8075CA70
+
+sgettag.c:
+	.text       start:0x80450134 end:0x8045021C
+
+sgp.cpp:
+	.text       start:0x8045021C end:0x80450250
+	.text       start:0x80450250 end:0x8045025C
+	.text       start:0x8045025C end:0x8045029C
+	.ctors      start:0x80594264 end:0x80594268
+	.sbss       start:0x80758C48 end:0x80758C58
+
+sgpaiff.cpp:
+	.text       start:0x8045029C end:0x804502CC
+
+sgparse.cpp:
+	.text       start:0x804502CC end:0x80450450
+
+slib.c:
+	.text       start:0x80450450 end:0x80450588
+	.sdata2     start:0x8075CA70 end:0x8075CA90
+
+slinklst.c:
+	.text       start:0x80450588 end:0x804506B8
+
+slowpass.c:
+	.text       start:0x804506B8 end:0x80450728
+
+smemcpy.cpp:
+	.text       start:0x80450728 end:0x80450944
+
+smemhigh.cpp:
+	.text       start:0x80450944 end:0x80450968
+
+smemman.c:
+	.text       start:0x80450968 end:0x80450CF0
+
+sndfxbus.cpp:
+	.text       start:0x80450CF0 end:0x80450F34
+	.sdata2     start:0x8075CA90 end:0x8075CA98
+
+SNDI_cos.c:
+	.text       start:0x80450F34 end:0x80450F98
+	.sdata2     start:0x8075CA98 end:0x8075CAB8
+
+SNDI_findprime.c:
+	.text       start:0x80450F98 end:0x80451054
+
+SNDI_mult16.c:
+	.text       start:0x80451054 end:0x80451080
+
+SNDI_root1x.c:
+	.text       start:0x80451080 end:0x804510F4
+	.sdata2     start:0x8075CAB8 end:0x8075CAD8
+
+SNDI_sin.c:
+	.text       start:0x804510F4 end:0x80451158
+	.sdata2     start:0x8075CAD8 end:0x8075CAF8
+
+sover.c:
+	.text       start:0x80451158 end:0x8045117C
+
+spantoaz.c:
+	.text       start:0x8045117C end:0x80451190
+	.data       start:0x8062EEA0 end:0x8062EFA0
+
+spat2hdr.c:
+	.text       start:0x80451190 end:0x8045169C
+
+spatkey.c:
+	.text       start:0x8045169C end:0x8045172C
+
+spitch.c:
+	.text       start:0x8045172C end:0x804517D0
+
+spktctoh.c:
+	.text       start:0x804517D0 end:0x8045185C
+
+spktplay.c:
+	.text       start:0x8045185C end:0x80452414
+	.bss        start:0x806A1ED8 end:0x806A2260
+	.sdata2     start:0x8075CAF8 end:0x8075CB08
+
+splysdef.c:
+	.text       start:0x80452414 end:0x8045246C
+
+spoutlat.c:
+	.text       start:0x8045246C end:0x8045248C
+
+sprofvoc.c:
+	.text       start:0x8045248C end:0x8045255C
+
+srandom.c:
+	.text       start:0x8045255C end:0x804526AC
+	.data       start:0x8062EFA0 end:0x8062EFB8
+	.bss        start:0x806A2260 end:0x806A2278
+
+sreallocbuf.cpp:
+	.text       start:0x804526AC end:0x8045274C
+
+srender.c:
+	.text       start:0x8045274C end:0x804527F0
+
+srrange.c:
+	.text       start:0x804527F0 end:0x8045284C
+
+sserver.c:
+	.text       start:0x8045284C end:0x80452C2C
+	.ctors      start:0x80594268 end:0x8059426C
+	.sdata      start:0x80755B20 end:0x80755B28
+	.sbss       start:0x80758C58 end:0x80758C68
+	.sdata2     start:0x8075CB08 end:0x8075CB10
+
+ssine.c:
+	.text       start:0x80452C2C end:0x80452CA8
+	.data       start:0x8062EFB8 end:0x8062F1C0
+
+sst.c:
+	.text       start:0x80452CA8 end:0x80453FF8
+	.data       start:0x8062F1C0 end:0x8062F1E8
+	.bss        start:0x806A2278 end:0x806A22F8
+	.sdata2     start:0x8075CB10 end:0x8075CB30
+
+sst3dpos.c:
+	.text       start:0x80453FF8 end:0x804542A0
+	.sdata2     start:0x8075CB30 end:0x8075CB40
+
+sstautov.c:
+	.text       start:0x804542A0 end:0x80454544
+	.sdata2     start:0x8075CB40 end:0x8075CB50
+
+sstcrtap.c:
+	.text       start:0x80454544 end:0x80454568
+
+sstfxlev.c:
+	.text       start:0x80454568 end:0x8045465C
+	.sdata2     start:0x8075CB50 end:0x8075CB60
+
+sstgetpv.c:
+	.text       start:0x8045465C end:0x804546F0
+	.sdata2     start:0x8075CB60 end:0x8075CB70
+
+sstgetrp.c:
+	.text       start:0x804546F0 end:0x80454760
+
+ssthold.c:
+	.text       start:0x80454760 end:0x804547C0
+
+sstlowp.c:
+	.text       start:0x804547C0 end:0x80454810
+
+sstop.c:
+	.text       start:0x80454810 end:0x80454870
+
+sstovrhd.c:
+	.text       start:0x80454870 end:0x80454918
+
+sstpmult.c:
+	.text       start:0x80454918 end:0x80454974
+
+sstqmem.c:
+	.text       start:0x80454974 end:0x80454984
+
+sstqreqi.c:
+	.text       start:0x80454984 end:0x80454994
+
+sstrmdry.cpp:
+	.text       start:0x80454994 end:0x804549E4
+
+sstrstat.c:
+	.text       start:0x804549E4 end:0x80454B58
+	.text       start:0x80454B58 end:0x80454BA0
+	.sdata2     start:0x8075CB70 end:0x8075CB90
+
+sstsetgl.c:
+	.text       start:0x80454BA0 end:0x80454BEC
+
+sststat.c:
+	.text       start:0x80454BEC end:0x80454CD0
+
+ssttmul.c:
+	.text       start:0x80454CD0 end:0x80454D3C
+
+sstvol.c:
+	.text       start:0x80454D3C end:0x80454F58
+	.rodata     start:0x805A1BD0 end:0x805A1BF8
+	.sdata2     start:0x8075CB90 end:0x8075CB98
+
+ssys.cpp:
+	.text       start:0x80454F58 end:0x80455694
+	.data       start:0x8062F1E8 end:0x8062F238
+	.bss        start:0x806A22F8 end:0x806A2338
+	.sdata      start:0x80755B28 end:0x80755B30
+	.sbss       start:0x80758C68 end:0x80758C80
+	.sdata2     start:0x8075CB98 end:0x8075CBA0
+
+ssysinit.c:
+	.text       start:0x80455694 end:0x80455DF0
+	.bss        start:0x806A2338 end:0x806A2350
+	.sdata      start:0x80755B30 end:0x80755B38
+	.sbss       start:0x80758C80 end:0x80758C90
+	.sdata2     start:0x8075CBA0 end:0x8075CBB0
+
+ssysserv.c:
+	.text       start:0x80455DF0 end:0x80455F14
+
+ssysveccsismutex.cpp:
+	.text       start:0x80455F14 end:0x80455F50
+
+stagpat.c:
+	.text       start:0x80455F50 end:0x804567F8
+	.sbss       start:0x80758C90 end:0x80758C98
+	.sdata2     start:0x8075CBB0 end:0x8075CBC0
+
+stimemul.c:
+	.text       start:0x804567F8 end:0x804568A0
+
+stimerem.c:
+	.text       start:0x804568A0 end:0x80456988
+
+stpparse.c:
+	.text       start:0x80456988 end:0x80457040
+	.sdata      start:0x80755B38 end:0x80755B40
+
+svecreal6.cpp:
+	.text       start:0x80457040 end:0x804570B4
+	.sbss       start:0x80758C98 end:0x80758CA0
+
+svol.c:
+	.text       start:0x804570B4 end:0x80457258
+	.sdata2     start:0x8075CBC0 end:0x8075CBD0
+
+coda.cpp:
+	.text       start:0x80457258 end:0x80457268
+	.sdata      start:0x80755B40 end:0x80755B48
+	.sbss       start:0x80758CA0 end:0x80758CA8
+
+ealayer3decf.cpp:
+	.text       start:0x80457268 end:0x8045727C
+
+eaxadecf.cpp:
+	.text       start:0x8045727C end:0x80457724
+	.data       start:0x8062F238 end:0x8062F658
+	.sdata2     start:0x8075CBD0 end:0x8075CBE0
+
+lbmpeg.cpp:
+	.text       start:0x80457724 end:0x80457738
+	.ctors      start:0x8059426C end:0x80594270
+	.sbss       start:0x80758CA8 end:0x80758CB0
+
+mtdecf.cpp:
+	.text       start:0x80457738 end:0x804589C0
+	.data       start:0x8062F658 end:0x8062FAD8
+	.sdata2     start:0x8075CBE0 end:0x8075CC28
+
+setmemcpy.cpp:
+	.text       start:0x804589C0 end:0x804589CC
+
+scrsfl.c:
+	.text       start:0x804589CC end:0x80458A7C
+	.sdata2     start:0x8075CC28 end:0x8075CC38
+
+sfamplf.c:
+	.text       start:0x80458A7C end:0x80458B88
+	.sdata2     start:0x8075CC38 end:0x8075CC48
+
+sfbpffir8.c:
+	.text       start:0x80458B88 end:0x80458D00
+	.sdata2     start:0x8075CC48 end:0x8075CC50
+
+sfecho.c:
+	.text       start:0x80458D00 end:0x80458FF8
+	.sdata2     start:0x8075CC50 end:0x8075CC60
+
+sfft24.c:
+	.text       start:0x80458FF8 end:0x8045906C
+
+sfhpffir8.c:
+	.text       start:0x8045906C end:0x804591B8
+	.sdata2     start:0x8075CC60 end:0x8075CC68
+
+sfilter.c:
+	.text       start:0x804591B8 end:0x8045934C
+
+sfir.c:
+	.text       start:0x8045934C end:0x804596A4
+	.sdata2     start:0x8075CC68 end:0x8075CC98
+
+sfir8.c:
+	.text       start:0x804596A4 end:0x80459788
+	.sdata2     start:0x8075CC98 end:0x8075CCA0
+
+sflpf.c:
+	.text       start:0x80459788 end:0x80459910
+	.sdata2     start:0x8075CCA0 end:0x8075CCB8
+
+sflpffir8.c:
+	.text       start:0x80459910 end:0x80459A60
+	.sdata2     start:0x8075CCB8 end:0x8075CCC8
+
+sfmixer.c:
+	.text       start:0x80459A60 end:0x80459BA4
+
+sfreson.c:
+	.text       start:0x80459BA4 end:0x80459EC8
+	.sdata2     start:0x8075CCC8 end:0x8075CCF0
+
+sfrsf.c:
+	.text       start:0x80459EC8 end:0x8045A218
+	.sdata2     start:0x8075CCF0 end:0x8075CCF8
+
+sfsplit.c:
+	.text       start:0x8045A218 end:0x8045A380
+
+sfsrc.c:
+	.text       start:0x8045A380 end:0x8045A418
+
+sfxrevc.c:
+	.text       start:0x8045A418 end:0x8045B518
+	.text       start:0x8045B518 end:0x8045B534
+	.rodata     start:0x805A1BF8 end:0x805A1C08
+	.data       start:0x8062FAD8 end:0x80630138
+	.bss        start:0x806A2350 end:0x806A2360
+	.sbss       start:0x80758CB0 end:0x80758CC0
+	.sdata2     start:0x8075CCF8 end:0x8075CD00
+
+sinit16.c:
+	.text       start:0x8045B534 end:0x8045B57C
+
+sinitut.c:
+	.text       start:0x8045B57C end:0x8045B5DC
+
+sinitxa.c:
+	.text       start:0x8045B5DC end:0x8045B624
+
+slinkmix.c:
+	.text       start:0x8045B624 end:0x8045B67C
+
+smixc.c:
+	.text       start:0x8045B67C end:0x8045B6A8
+
+smixer.c:
+	.text       start:0x8045B6A8 end:0x8045C7D0
+	.bss        start:0x806A2360 end:0x806A2548
+	.sbss       start:0x80758CC0 end:0x80758CC8
+	.sdata2     start:0x8075CD00 end:0x8075CD80
+
+smixvec.c:
+	.sbss       start:0x80758CC8 end:0x80758CE8
+
+smixfilt.c:
+	.text       start:0x8045C7D0 end:0x8045C864
