@@ -868,3 +868,10 @@ smixvec.c:
 
 smixfilt.c:
 	.text       start:0x8045C7D0 end:0x8045C864
+
+Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
+	.text       start:0x8056BCD8 end:0x8056BD48
+	.ctors      start:0x805941C0 end:0x805941C4 rename:.ctors$10
+	.dtors      start:0x80594300 end:0x80594304 rename:.dtors$10
+	.dtors      start:0x80594304 end:0x80594308 rename:.dtors$15
+	.sdata      start:0x807563F0 end:0x807563F4

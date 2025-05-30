@@ -98,7 +98,7 @@ default_include_directories: list[str] = [
     flag.strip("-i").lstrip() for flag in cflags_includes
 ]
 
-default_output_filename = "ctx.c"
+default_output_filename = "ctx.cpp"
 # endregion
 
 

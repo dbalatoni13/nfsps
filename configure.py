@@ -195,7 +195,7 @@ cflags_base = [
     "-RTTI off",
     "-fp_contract on",
     "-str reuse",
-    "-multibyte",  # For Wii compilers, replace with `-enc SJIS`
+    "-enc SJIS",
     "-i include",
     f"-i build/{config.version}/include",
     f"-DBUILD_VERSION={version_num}",
@@ -219,9 +219,9 @@ cflags_runtime = [
     "-inline auto",
 ]
 
-cflags_indep = [*cflags_base, "-O0"]
+cflags_indep = [*cflags_base]
 
-config.linker_version = "GC/1.3.2"
+config.linker_version = "GC/3.0a3"
 
 
 # Helper function for Dolphin libraries
@@ -255,7 +255,10 @@ config.libs = [
         "mw_version": config.linker_version,
         "cflags": cflags_indep,
         "host": False,
-        "objects": [Object(NonMatching, "Indep/zMiscSmall.cpp")],
+        "objects": [
+            Object(NonMatching, "Indep/zMiscSmall.cpp"),
+            Object(NonMatching, "Indep/zOnline.cpp"),
+        ],
     },
     {
         "lib": "Runtime.PPCEABI.H",
