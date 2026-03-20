@@ -196,7 +196,10 @@ cflags_base = [
     "-fp_contract on",
     "-str reuse",
     "-enc SJIS",
+    "-gccinc",
     "-i include",
+    "-DEA_PLATFORM_GAMECUBE",
+    "-DEA_REGION_AMERICA",
     f"-i build/{config.version}/include",
     f"-DBUILD_VERSION={version_num}",
     f"-DVERSION_{config.version}",
@@ -205,7 +208,9 @@ cflags_base = [
 # Debug flags
 if args.debug:
     # Or -sym dwarf-2 for Wii compilers
-    cflags_base.extend(["-sym on", "-DDEBUG=1"])
+    # cflags_base.extend(["-sym on", "-DDEBUG=1"])
+    # TODO
+    cflags_base.extend(["-sym on"])
 else:
     cflags_base.append("-DNDEBUG=1")
 
@@ -219,9 +224,21 @@ cflags_runtime = [
     "-inline auto",
 ]
 
-cflags_indep = [*cflags_base]
+cflags_game = [
+    *cflags_base,
+    "-O2",
+    "-use_lmw_stmw on",
+    "-inline on",
+    # "-sdata 4",
+    # "-sdata2 4",
+    # "-inline auto,"
+    # "level=2",
+    "-i src/Packages",
+    "-i ./",
+    "-i src",
+]
 
-config.linker_version = "GC/3.0a3"
+config.linker_version = "GC/3.0a5"
 
 
 # Helper function for Dolphin libraries
@@ -252,12 +269,15 @@ config.warn_missing_source = False
 config.libs = [
     {
         "lib": "Indep",
-        "mw_version": config.linker_version,
-        "cflags": cflags_indep,
+        "mw_version": "GC/3.0a3",
+        "cflags": cflags_game,
         "host": False,
         "objects": [
-            Object(NonMatching, "Indep/zMiscSmall.cpp"),
-            Object(NonMatching, "Indep/zOnline.cpp"),
+            Object(Matching, "Speed/Indep/SourceLists/zBWare.cpp"),
+            Object(NonMatching, "Speed/Indep/SourceLists/zEAGL4Anim.cpp"),
+            Object(NonMatching, "Speed/Indep/SourceLists/zEcstasy.cpp"),
+            Object(NonMatching, "Speed/Indep/SourceLists/zMiscSmall.cpp"),
+            Object(NonMatching, "Speed/Indep/SourceLists/zOnline.cpp"),
         ],
     },
     {
